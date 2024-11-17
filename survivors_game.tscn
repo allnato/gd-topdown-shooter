@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ba8huj7o6ni5x"]
+[gd_scene load_steps=4 format=3 uid="uid://ba8huj7o6ni5x"]
 
 [ext_resource type="PackedScene" uid="uid://ddl7g4bcusjq0" path="res://player/player.tscn" id="1_bhpg0"]
 [ext_resource type="PackedScene" uid="uid://dixuafymb51p2" path="res://trees/tree.tscn" id="2_vaegy"]
+[ext_resource type="PackedScene" uid="uid://sm3dv4vcf01n" path="res://mob/mob.tscn" id="3_hxae2"]
 
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
@@ -12,6 +13,7 @@ offset_bottom = 1080.0
 metadata/_edit_lock_ = true
 
 [node name="Player" parent="." instance=ExtResource("1_bhpg0")]
+unique_name_in_owner = true
 position = Vector2(1133, 565)
 
 [node name="Tree" parent="." instance=ExtResource("2_vaegy")]
@@ -43,3 +45,6 @@ position = Vector2(206, 446)
 
 [node name="Tree10" parent="." instance=ExtResource("2_vaegy")]
 position = Vector2(765, 267)
+
+[node name="Mob" parent="." instance=ExtResource("3_hxae2")]
+position = Vector2(228, 923)
