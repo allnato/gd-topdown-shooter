@@ -21,4 +21,9 @@ position = Vector2(99, 0)
 texture = ExtResource("1_pivrj")
 
 [node name="Bullethole" type="Marker2D" parent="GunPivot/GunSprite"]
+unique_name_in_owner = true
 position = Vector2(27, -11)
+
+[node name="FireRate" type="Timer" parent="."]
+wait_time = 0.8
+autostart = true
